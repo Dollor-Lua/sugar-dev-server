@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Developer Server Template</title>
+
+    <script defer type="module" src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/bundle.css">
+</head>
+
+<body>
+    <h1 id="title">The oven is ready!</h1>
+    <p class="baking">You can now start baking with sugar</p>
+
+    <img class="sugar" src="/assets/sugar.png" alt="Sugar logo">
+
+    <div class="versions">
+        <p>
+            <strong>Sugar dev server template version:</strong> <%= _SugarTemplateVersion %>
+        </p>
+        <p>
+            <strong>Node version:</strong> <%= _NodeVersion %>
+        </p>
+    </div>
+</body>
+
+</html>

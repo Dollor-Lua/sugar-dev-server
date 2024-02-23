@@ -1,0 +1,19 @@
+{
+    "name": "sugar-dev-server",
+    "version": "1.0.0",
+    "main": "server/index.js",
+    "license": "MIT",
+    "scripts": {
+        "compile:styles": "sass ./source/css/main.scss ./build/css/bundle.css",
+        "compile": "npm run compile:styles",
+        "start": "npm run compile && node server/index.js"
+    },
+    "dependencies": {
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "socket.io": "^4.7.4"
+    },
+    "devDependencies": {
+        "sass": "^1.71.1"
+    }
+}
